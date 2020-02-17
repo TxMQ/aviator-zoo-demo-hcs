@@ -2,10 +2,8 @@ io/swagger/model/Animal.class
 com/txmq/exozoodemo/SocketDemoState.class
 com/txmq/exozoodemo/socket/ZooSocketApi.class
 com/txmq/exozoodemo/rest/ZooRestApi.class
-com/txmq/aviator/config/model/HCSConfig.class
 io/swagger/model/Zoo.class
 ExoZooDemoMain.class
-com/txmq/aviator/core/hcs/AviatorHCSConsensus.class
 com/txmq/exozoodemo/transactions/ZooTransactions.class
 com/txmq/exozoodemo/websocket/ZooWebSocketSubscriber.class
 com/txmq/exozoodemo/ZooDemoTransactionTypes.class

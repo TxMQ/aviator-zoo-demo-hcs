@@ -69,7 +69,7 @@ public class AviatorHCSConsensus extends Aviator implements IAviator {
 			System.out.println("Record this topic ID in aviator-config.json to re-connect to the same topic");
 		} else {
 			//Determine topic ID
-			String[] topicTokens = hcsConfig.hcsTopicID.split(".");
+			String[] topicTokens = hcsConfig.hcsTopicID.split("\\.");
 			this.topicID = new ConsensusTopicId(
 					Long.parseLong(topicTokens[0]), 
 					Long.parseLong(topicTokens[1]), 

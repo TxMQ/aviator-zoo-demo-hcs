@@ -15,8 +15,8 @@
     	"mirrorNodeAddress": "api.testnet.kabuto.sh:50211",
     	"operatorID": "0.0.155245",
     	"operatorKey": "302e020100300506032b657004220420a550d510ddcf7747ce2004192c8b7f138c98189c206379a7655e829b58aed683",
-    	"createTopic": true,
-    	"hcsTopicID": ""    	
+    	"createTopic": false,
+    	"hcsTopicID": "0.0.178934"    	
     },
     "blockLoggers": [
     	{
