@@ -1,0 +1,35 @@
+{
+    "transactionProcessors": [
+		"com.txmq.exozoodemo",
+		"com.txmq.aviator.messaging.rest"
+	],
+	"rest": {
+        "port": -1,
+        "derivedPort": 2000,
+        "handlers": [
+			"com.txmq.exozoodemo.rest"
+        ]
+    },
+    "hcs": {
+    	"useMainnet": false,
+    	"mirrorNodeAddress": "api.testnet.kabuto.sh:50211",
+    	"operatorID": "0.0.155245",
+    	"operatorKey": "302e020100300506032b657004220420a550d510ddcf7747ce2004192c8b7f138c98189c206379a7655e829b58aed683",
+    	"createTopic": true,
+    	"hcsTopicID": ""    	
+    },
+    "blockLoggers": [
+    	{
+			"loggerClass": "com.txmq.aviator.blocklogger.couchdb.CouchDBBlockLogger",
+			"parameters": [
+				{ "key": "databaseName", "value": "zoo-"},
+				{ "key": "useAsPrefix", "value": "true"},
+				{ "key": "protocol", "value": "http"},
+				{ "key": "host", "value": "localhost"},
+				{ "key": "port", "value": "5984"},
+				{ "key": "blockSize", "value": 5},
+				{ "key": "createDb", "value": "true"}
+			]
+		}
+	]
+}
